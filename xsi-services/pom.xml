@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns="http://maven.apache.org/POM/4.0.0"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>xsi-parent</artifactId>
+        <groupId>be.urpi.software.xsi</groupId>
+        <version>0.0.1-SNAPSHOT</version>
+        <relativePath>../xsi-parent/pom.xml</relativePath>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+    <packaging>pom</packaging>
+
+    <groupId>be.urpi.software.xsi.services</groupId>
+    <artifactId>xsi-services</artifactId>
+    <modules>
+        <module>user/xsi-user-parent</module>
+        <module>project/xsi-project-parent</module>
+        <module>request/xsi-request</module>
+    </modules>
+</project>

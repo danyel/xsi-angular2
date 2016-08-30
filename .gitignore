@@ -1,0 +1,9 @@
+**/*.iml
+xsi-ui/dist
+xsi-ui/tmp
+xsi-ui/node
+xsi-ui/node_modules
+xsi-parent/.mvn
+xsi-parent/.idea
+**/*.swp
+**/.*.swp

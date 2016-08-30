@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns="http://maven.apache.org/POM/4.0.0"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>xsi-project-parent</artifactId>
+        <groupId>be.urpi.software.xsi.services.project</groupId>
+        <version>0.0.1-SNAPSHOT</version>
+        <relativePath>../xsi-project-parent/pom.xml</relativePath>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>xsi-project-model</artifactId>
+
+    <dependencies>
+        <dependency>
+            <groupId>be.urpi.software.xsi.services.project</groupId>
+            <artifactId>xsi-project-cqrs</artifactId>
+            <type>jar</type>
+        </dependency>
+        <dependency>
+            <groupId>be.urpi.software.xsi.core</groupId>
+            <artifactId>xsi-core-model</artifactId>
+            <type>jar</type>
+        </dependency>
+        <dependency>
+            <groupId>be.urpi.software.xsi.core</groupId>
+            <artifactId>xsi-core-util</artifactId>
+            <type>jar</type>
+        </dependency>
+    </dependencies>
+</project>
