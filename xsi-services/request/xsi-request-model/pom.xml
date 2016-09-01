@@ -12,5 +12,11 @@
 
     <artifactId>xsi-request-model</artifactId>
 
-
+    <dependencies>
+        <dependency>
+            <groupId>be.urpi.software.xsi.core</groupId>
+            <artifactId>xsi-core-model</artifactId>
+            <type>jar</type>
+        </dependency>
+    </dependencies>
 </project>

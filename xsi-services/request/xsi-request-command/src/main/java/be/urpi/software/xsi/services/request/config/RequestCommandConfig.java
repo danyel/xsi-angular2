@@ -2,11 +2,13 @@ package be.urpi.software.xsi.services.request.config;
 
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.Import;
 
 /**
  * Created by daniel on 29/08/16.
  */
 @Configuration
 @ComponentScan(value = "be.urpi.software.xsi.services.request.controller")
+@Import(value = {RequestConfig.class})
 public class RequestCommandConfig {
 }
