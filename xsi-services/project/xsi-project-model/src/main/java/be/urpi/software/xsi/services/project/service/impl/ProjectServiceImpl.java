@@ -1,13 +1,13 @@
 package be.urpi.software.xsi.services.project.service.impl;
 
 import be.urpi.software.xsi.services.project.model.ProjectAR;
-import be.urpi.software.xsi.services.project.repository.api.ProjectRepository;
+import be.urpi.software.xsi.services.project.repository.ProjectRepository;
 import be.urpi.software.xsi.services.project.service.api.ProjectService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 /**
- * Created by daniel on 27/08/16.
+ * Created by daniel on 9/2/16.
  */
 @Service
 public class ProjectServiceImpl implements ProjectService {
@@ -19,7 +19,7 @@ public class ProjectServiceImpl implements ProjectService {
     }
 
     @Override
-    public ProjectAR save(ProjectAR project) {
-        return projectRepository.save(project);
+    public ProjectAR create(ProjectAR projectAR) {
+        return projectRepository.save(projectAR);
     }
 }

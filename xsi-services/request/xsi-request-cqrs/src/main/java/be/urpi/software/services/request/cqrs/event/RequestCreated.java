@@ -3,11 +3,13 @@ package be.urpi.software.services.request.cqrs.event;
 import be.urpi.software.xsi.core.cqrs.api.event.Event;
 import be.urpi.software.xsi.core.util.builder.Builder;
 
+import java.util.UUID;
+
 /**
  * Created by daniel on 9/1/16.
  */
 public class RequestCreated implements Event {
-    private String id;
+    private UUID id;
 
     public RequestCreated() {
     }
@@ -20,17 +22,17 @@ public class RequestCreated implements Event {
         return new RequestCreatedBuilder();
     }
 
-    public String getId() {
+    public UUID getId() {
         return id;
     }
 
     public static class RequestCreatedBuilder implements Builder<RequestCreated> {
-        private String id;
+        private UUID id;
 
         private RequestCreatedBuilder() {
         }
 
-        public RequestCreatedBuilder withId(String id) {
+        public RequestCreatedBuilder withId(UUID id) {
             this.id = id;
             return this;
         }

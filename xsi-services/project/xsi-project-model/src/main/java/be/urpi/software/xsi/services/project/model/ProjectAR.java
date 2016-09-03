@@ -1,24 +1,16 @@
 package be.urpi.software.xsi.services.project.model;
 
-import be.urpi.software.xsi.core.model.api.sequence.UuidSequence;
+import be.urpi.software.xsi.core.model.api.AbstractBaseModel;
 import be.urpi.software.xsi.core.util.builder.Builder;
-import org.hibernate.annotations.GenericGenerator;
 
 import javax.persistence.*;
-import java.util.UUID;
 
 /**
  * Created by daniel on 27/08/16.
  */
 @Entity
 @Table(name = "td_project", schema = "domain")
-public class ProjectAR {
-    @Id
-    @Column(name = "uuid", nullable = false, insertable = true, updatable = false, unique = true, length = 36)
-    @Access(value = AccessType.FIELD)
-    @GenericGenerator(name = "sequence_dep_id", strategy = UuidSequence.NAME)
-    @GeneratedValue(generator = "sequence_dep_id")
-    private UUID uuid;
+public class ProjectAR extends AbstractBaseModel {
     @Column(name = "name")
     @Access(value = AccessType.FIELD)
     private String name;
@@ -31,9 +23,6 @@ public class ProjectAR {
         return new ProjectBuilder();
     }
 
-    public UUID getUuid() {
-        return uuid;
-    }
 
     public String getName() {
         return name;

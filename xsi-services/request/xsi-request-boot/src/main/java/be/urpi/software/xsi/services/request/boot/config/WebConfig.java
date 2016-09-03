@@ -1,6 +1,7 @@
 package be.urpi.software.xsi.services.request.boot.config;
 
 import be.urpi.software.xsi.core.config.SwaggerConfig;
+import be.urpi.software.xsi.core.hsqldb.HsqlDbConfig;
 import be.urpi.software.xsi.services.request.config.RequestCommandConfig;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Import;
@@ -11,7 +12,7 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter
  * Created by daniel on 29/08/16.
  */
 @Configuration
-@Import(value = {RequestCommandConfig.class, SwaggerConfig.class})
+@Import(value = {RequestCommandConfig.class, SwaggerConfig.class, HsqlDbConfig.class})
 public class WebConfig extends WebMvcConfigurerAdapter {
     @Override
     public void addResourceHandlers(ResourceHandlerRegistry registry) {

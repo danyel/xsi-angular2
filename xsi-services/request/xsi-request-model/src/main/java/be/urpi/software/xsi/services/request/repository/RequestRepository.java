@@ -1,10 +1,12 @@
 package be.urpi.software.xsi.services.request.repository;
 
+import be.urpi.software.xsi.core.model.api.repository.BaseModelRepository;
 import be.urpi.software.xsi.services.request.model.RequestAR;
-import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
 
 /**
  * Created by daniel on 9/1/16.
  */
-public interface RequestRepository extends JpaRepository<RequestAR, String> {
+@Repository
+public interface RequestRepository extends BaseModelRepository<RequestAR> {
 }

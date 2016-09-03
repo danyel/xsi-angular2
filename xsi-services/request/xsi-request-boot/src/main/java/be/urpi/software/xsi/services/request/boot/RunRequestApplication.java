@@ -10,9 +10,9 @@ import org.springframework.boot.web.support.SpringBootServletInitializer;
  * Created by daniel on 29/08/16.
  */
 @SpringBootApplication
-public class RunApplication extends SpringBootServletInitializer {
+public class RunRequestApplication extends SpringBootServletInitializer {
     public static void main(String[] args) {
-        SpringApplication.run(RunApplication.class, args);
+        SpringApplication.run(RunRequestApplication.class, args);
     }
 
     @Override

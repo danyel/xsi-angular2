@@ -20,6 +20,7 @@
         <module>../xsi-core-util</module>
         <module>../xsi-core-swagger</module>
         <module>../xsi-core-command</module>
+        <module>../xsi-hsqldb</module>
     </modules>
 
 

@@ -7,6 +7,7 @@ import javax.persistence.Access;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Table;
+import java.util.UUID;
 
 import static javax.persistence.AccessType.FIELD;
 
@@ -15,13 +16,13 @@ import static javax.persistence.AccessType.FIELD;
  */
 @Entity
 @Table(schema = "domain", name = "td_request")
-public class RequestAR extends AbstractBaseModel<String> {
+public class RequestAR extends AbstractBaseModel {
     @Column(name = "name")
     @Access(value = FIELD)
     private String name;
-    @Column(name = "project")
+    @Column(name = "project_id")
     @Access(value = FIELD)
-    private String project;
+    private UUID project;
 
     protected RequestAR() {
     }
@@ -40,20 +41,20 @@ public class RequestAR extends AbstractBaseModel<String> {
         return name;
     }
 
-    public String getProject() {
+    public UUID getProject() {
         return project;
     }
 
     public static class RequestBuilder implements Builder<RequestAR> {
         private String name;
-        private String project;
+        private UUID project;
 
         public RequestBuilder withName(String name) {
             this.name = name;
             return this;
         }
 
-        public RequestBuilder withProject(String project) {
+        public RequestBuilder withProject(UUID project) {
             this.project = project;
             return this;
         }
