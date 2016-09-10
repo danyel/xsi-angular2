@@ -17,6 +17,7 @@
         <module>../xsi-request-cqrs</module>
         <module>../xsi-request-model</module>
         <module>../xsi-request-command</module>
+        <module>../xsi-request-query</module>
         <module>../xsi-request-boot</module>
     </modules>
 
@@ -37,6 +38,12 @@
             <dependency>
                 <groupId>be.urpi.software.xsi.services.request</groupId>
                 <artifactId>xsi-request-cqrs</artifactId>
+                <version>${project.version}</version>
+                <type>jar</type>
+            </dependency>
+            <dependency>
+                <groupId>be.urpi.software.xsi.services.request</groupId>
+                <artifactId>xsi-request-query</artifactId>
                 <version>${project.version}</version>
                 <type>jar</type>
             </dependency>

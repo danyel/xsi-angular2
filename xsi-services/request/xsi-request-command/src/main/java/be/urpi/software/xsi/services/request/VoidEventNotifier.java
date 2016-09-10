@@ -9,6 +9,6 @@ import be.urpi.software.xsi.core.cqrs.api.event.notify.EventNotifier;
 public class VoidEventNotifier implements EventNotifier {
     @Override
     public <E extends Event> void notify(E event) {
-
+        System.out.println(event.toString());
     }
 }

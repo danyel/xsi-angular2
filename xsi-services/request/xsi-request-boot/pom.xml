@@ -11,11 +11,29 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>xsi-request-boot</artifactId>
+    <packaging>war</packaging>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-war-plugin</artifactId>
+                <configuration>
+                    <failOnMissingWebXml>false</failOnMissingWebXml>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
 
     <dependencies>
         <dependency>
             <groupId>be.urpi.software.xsi.services.request</groupId>
             <artifactId>xsi-request-command</artifactId>
+            <type>jar</type>
+        </dependency>
+        <dependency>
+            <groupId>be.urpi.software.xsi.services.request</groupId>
+            <artifactId>xsi-request-query</artifactId>
             <type>jar</type>
         </dependency>
         <dependency>

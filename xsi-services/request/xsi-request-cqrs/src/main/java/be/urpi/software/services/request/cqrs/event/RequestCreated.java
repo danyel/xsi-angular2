@@ -42,4 +42,11 @@ public class RequestCreated implements Event {
             return new RequestCreated(this);
         }
     }
+
+    @Override
+    public String toString() {
+        return "RequestCreated{" +
+                "id=" + id +
+                '}';
+    }
 }
