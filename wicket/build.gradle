@@ -1,0 +1,16 @@
+
+apply plugin: 'war'
+
+description = ''
+dependencies {
+    compile group: 'org.apache.wicket', name: 'wicket-core', version:'8.0.0-M1'
+    compile group: 'org.apache.wicket', name: 'wicket-extensions', version:'8.0.0-M1'
+    compile group: 'org.apache.wicket', name: 'wicket-spring', version:'8.0.0-M1'
+    compile group: 'org.webjars', name: 'bootstrap', version:'3.3.7'
+    compile group: 'org.springframework', name: 'spring-web', version:'5.0.0.M1'
+    compile group: 'de.agilecoders.wicket.webjars', name: 'wicket-webjars', version:'2.0.1'
+  compile project(':xsi-request:xsi-request-infrastructure')
+  compile project(':xsi-core-parent:xsi-core-infrastructure')
+    compile group: 'org.postgresql', name: 'postgresql', version:'9.4.1210.jre7'
+    providedCompile group: 'javax.servlet', name: 'javax.servlet-api', version:'3.1.0'
+}

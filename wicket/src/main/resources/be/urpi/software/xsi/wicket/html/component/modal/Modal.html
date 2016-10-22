@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:wicket="http://wicket.apache.org">
+<body>
+<wicket:panel>
+    <!-- Modal -->
+    <div class="modal fade" wicket:id="modalFadeDivContainer" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel"><span wicket:id="modalHeader"></span></h4>
+                </div>
+                <div class="modal-body">
+                    <span wicket:id="modalPanel"></span>
+                </div>
+                <div class="modal-footer">
+                   <span wicket:id="modalFooterButtonPanel"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+</wicket:panel>
+</body>
+</html>

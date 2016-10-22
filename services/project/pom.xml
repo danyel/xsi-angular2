@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns="http://maven.apache.org/POM/4.0.0"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>services</artifactId>
+        <groupId>be.urpi.software.xsi.services</groupId>
+        <version>0.0.1-SNAPSHOT</version>
+        <relativePath>../../services/pom.xml</relativePath>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>be.urpi.software.xsi.services.project</groupId>
+    <artifactId>project</artifactId>
+    <packaging>pom</packaging>
+    <modules>
+        <module>project-api</module>
+        <module>project-service</module>
+    </modules>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>be.urpi.software.xsi.project</groupId>
+                <artifactId>xsi-project-cqrs</artifactId>
+                <version>${project.version}</version>
+                <type>jar</type>
+            </dependency>
+            <dependency>
+                <groupId>be.urpi.software.xsi.project</groupId>
+                <artifactId>xsi-project-model-api</artifactId>
+                <version>${project.version}</version>
+                <type>jar</type>
+            </dependency>
+            <dependency>
+                <groupId>be.urpi.software.xsi.project</groupId>
+                <artifactId>xsi-project-repository-api</artifactId>
+                <version>${project.version}</version>
+                <type>jar</type>
+            </dependency>
+            <dependency>
+                <groupId>be.urpi.software.xsi.project</groupId>
+                <artifactId>xsi-project-service-api</artifactId>
+                <version>${project.version}</version>
+                <type>jar</type>
+            </dependency>
+            <dependency>
+                <groupId>be.urpi.software.xsi.project</groupId>
+                <artifactId>xsi-project-service-impl</artifactId>
+                <version>${project.version}</version>
+                <type>jar</type>
+            </dependency>
+            <dependency>
+                <groupId>be.urpi.software.xsi.project</groupId>
+                <artifactId>xsi-project-facade-api</artifactId>
+                <version>${project.version}</version>
+                <scope>provided</scope>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+</project>
